@@ -6,5 +6,6 @@ export default function Home() {
   useEffect(() => {
     router.push('/1')
   }, [router])
-  return null // Redirecting...
+  return null 
+
 }
