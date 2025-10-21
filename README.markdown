@@ -33,4 +33,4 @@ HN Scout is a web application designed to explore and curate content from Hacker
 
 ## AI Tools Used
 - **Grok (xAI)**: Utilized for debugging UI/UX issues (e.g., suggestion dropdown persistence), optimizing algorithms (e.g., scoring formula refinement).
-- **Cursor: Leveraged for  real-time error detection, streamlining the coding process and reducing manual debugging time.
+- **Cursor**: Leveraged for  real-time error detection, streamlining the coding process and reducing manual debugging time.
