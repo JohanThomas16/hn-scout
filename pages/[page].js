@@ -231,7 +231,7 @@ export default function Page({ hits, currentPage, nbPages, error }) {
               <input
                 type="text"
                 value={domainFilter}
-                onChange={handleDomainChange} // Changed: Use new handler
+                onChange={handleDomainChange} 
                 placeholder="Filter by domain (e.g., medium.com)"
                 className="w-full p-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                 aria-label="Filter by domain"
@@ -249,7 +249,7 @@ export default function Page({ hits, currentPage, nbPages, error }) {
                   onClick={(e) => {
                     setDomainFilter(sug);
                     setSuggestions([]);
-                    // Auto-submit on suggestion click
+                    
                    const form = e.target.closest('form');
             if (form) form.dispatchEvent(new Event('submit', { cancelable: true }));
           }}
@@ -391,4 +391,5 @@ export async function getServerSideProps({ params, query, res }) {
     if (res) res.statusCode = 500;
     return { props: { hits: [], currentPage: page, nbPages: 1, error: err.message } };
   }
+
 }
